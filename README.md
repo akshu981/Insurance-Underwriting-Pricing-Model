@@ -6,9 +6,9 @@ Why this project: Insurers are under increasing regulatory pressure to make pric
 
 Approach:
 
-Predicts claim frequency and severity using the French Motor Third-Party Liability dataset (freMTPL2freq/sev)
-Compares a baseline GLM ("champion") against an XGBoost model ("challenger") using actuarial-standard validation (Gini coefficient, lift charts) rather than naive A/B testing
-Includes an explainability layer (SHAP) and fairness testing (disparate impact analysis) before any model is promoted to production
-Monitors for data drift over time, with automated retraining triggers when performance degrades
+- Predicts claim frequency and severity using the French Motor Third-Party Liability dataset (freMTPL2freq/sev). <br>
+- Compares a baseline GLM ("champion") against an XGBoost model ("challenger") using actuarial-standard validation (Gini coefficient, lift charts) rather than naive A/B testing. <br>
+- Includes an explainability layer (SHAP) and fairness testing (disparate impact analysis) before any model is promoted to production. <br>
+- Monitors for data drift over time, with automated retraining triggers when performance degrades. <br>
 
 Tech stack: Python (pandas, scikit-learn, XGBoost), AWS (S3, SageMaker), GitHub Actions for CI/CD
