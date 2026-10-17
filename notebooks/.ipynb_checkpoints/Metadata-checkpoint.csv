@@ -1,0 +1,22 @@
+﻿The policy ID ,(used to link with the claims dataset).
+,
+ClaimNb,The number of claims during the exposure period.
+,
+Exposure,"The period of exposure for a policy, in years; period of exposure in insurance refers to the specific timeframe during which an insured person, property, or business is vulnerable to a loss that the policy covers."
+,
+VehPower,The power of the car (split into ordinal categories).
+,
+VehAge,"The vehicle age, in years."
+,
+DrivAge,"The driver's age, in years (in France, people can drive a car from the age of 18)."
+,
+BonusMalus,"The bonus/malus rating (no-claims reward rating) of the policyholder, between 50 and 350: <100 means bonus, >100 means malus in France."
+,"100 is the neutral starting point (every new driver starts here). Each claim-free year decreases the score by roughly 5% (down toward a floor, typically 50) — this is the ""bonus"" (discount). Each at-fault claim increases the score, often substantially (up to 25%+ per claim) — this is the ""malus"" (penalty). So a driver with BonusMalus = 50 has an excellent, long claim-free history (paying half the base premium), while a driver with BonusMalus = 140+ has had recent at-fault claims and pays well above base premium."
+,
+VehBrand,"The brand of the car, divided into unknown categories."
+,
+VehGas,The car's fuel type: Diesel or Regular (petrol?).
+,
+Area,"The density-rating of the community that the car driver lives in, divided into categories; from ""A"" - rural area to ""F"" - urban"
+,
+Density,"Number of inhabitants per square kilometer of the municipality where the policyholder lives; Density = 1217 means: the policyholder lives in an area with approximately 1,217 people per km²."
