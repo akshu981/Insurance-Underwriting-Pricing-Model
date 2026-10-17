@@ -1,2 +1,3 @@
-﻿code/*.csv
+﻿venv/
+code/*.csv
 code/training_log*.txt
