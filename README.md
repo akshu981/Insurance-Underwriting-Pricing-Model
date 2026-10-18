@@ -30,13 +30,13 @@ If we were using a fully cloud-native setup, the flow would be: *JupyterLab -> A
 
 ## Component Breakdown
 **1. JupyterLab & Desktop Docker (Local Control & Execution)**
-JupyterLab (Control Tower): Acts as the primary environment where code is written, modified, and tracked via the Local Git Repo (which pushes backups to GitHub).
+JupyterLab: Acts as the primary environment where code is written, modified, and tracked via the Local Git Repo (which pushes backups to GitHub).
 
 Command Prompt (The Bridge): We use terminal commands (e.g., run_training_job.py) in the JupyterLab environment to tell Docker to start executing. Docker Desktop (Engine Room) runs isolated containers. It ensures that our application runs identically regardless of the machine. In this project, Docker executes the code inside an isolated environment and simulates AWS SageMaker jobs locally. Since this local processing relies on the computer's CPU, it is highly effective for sequential tasks like our GLM and XGBoost models.
 
 
 **2. Docker and AWS (Cloud Interaction)**
-IAM Role: Docker uses AWS credentials via an IAM Role to securely authenticate and communicate with the AWS Cloud.
+Docker uses AWS credentials via an IAM Role to securely authenticate and communicate with the AWS Cloud.
 
 Amazon S3 Bucket: Acts as our centralized cloud storage. The local Docker container:
 - READS the raw data from S3 to train the model.
