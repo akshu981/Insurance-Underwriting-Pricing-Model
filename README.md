@@ -18,7 +18,7 @@ Tech stack: Python (pandas, scikit-learn, XGBoost), AWS (S3, SageMaker), GitHub 
 
 ## Architecture Overview
 
-This project utilizes a **Local-First MLOps architecture** with Cloud Backup and Artifact Storage. The primary goal of this design is **cost-efficiency**—specifically to avoid incurring high costs from provisioning cloud-based AWS SageMaker compute instances during the development and experimentation phases.
+This project utilizes a **Local-First MLOps architecture** with Cloud Backup and Artifact Storage. The primary goal of this design is **cost-efficiency**, specifically to avoid incurring high costs from provisioning cloud-based AWS SageMaker compute instances during the development and experimentation phases.
 
 Because we are running the heavy compute locally, the flow is: **JupyterLab -> Local Docker -> AWS Cloud (S3)**. 
 
