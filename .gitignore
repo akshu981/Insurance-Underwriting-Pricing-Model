@@ -1,4 +1,8 @@
-﻿venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+artifacts/
 code/*.csv
 code/training_log*.txt
-.ipynb_checkpoints/ 
+*_test_output.csv

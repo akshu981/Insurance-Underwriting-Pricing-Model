@@ -1,0 +1,16 @@
+{
+  "champion": {
+    "test_gini": 0.2976,
+    "pure_premium_gini": 0.259,
+    "di_density": 0.821,
+    "di_region": 0.777,
+    "pp_calibration_adj": 1.063
+  },
+  "challenger": {
+    "test_gini": 0.3348,
+    "pure_premium_gini": 0.3061,
+    "di_density": 0.813,
+    "di_region": 0.789,
+    "pp_calibration_adj": 1.013
+  }
+}
